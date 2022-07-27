@@ -1,0 +1,274 @@
+body{
+    background-color: #4b94d1;
+    background-image: url("picture.svg");
+    background-size: 240px;
+    background-repeat: repeat;
+    color: #fff;
+  }
+  @media(max-width:659px){
+    body{
+  background-size: 125px;
+    }
+  }
+  
+  /*-----------------------------------NavBar----------------------------------- */
+  
+  .brand-logo{
+    width:224px;
+    padding-bottom: 11.2px;
+  }
+  #nav{
+    margin: 64px 80px 80px 80px;
+  }
+  .nav-link{
+    color: #fff;
+    margin: 30px 0px 0px 0px;
+    font-size: 27.2px;
+  }
+  .nav-link:hover{
+    color:
+    #443e83;
+  }
+    .log-in{
+      color: #ff9b39;
+      font-weight: bold;
+    }  
+    .log-btn{
+        background-color: transparent;
+        border: none;
+      }
+      .popup{
+        color: #fff;
+        text-align: center;
+        width:500px;
+        height: 300px;
+        background-color: #201a58;
+        border-radius: 6px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0.1);
+        transition: transform 0.4s, top 0.4s;
+        z-index: 1;
+        visibility: hidden;
+    
+      }
+      .open-popup{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);
+        top: 50%;
+        position: fixed;
+        z-index: 2;
+      }
+      h2{
+        font-size: 34px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      p{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 4rem;
+      }
+      .form{
+        display: flex;
+        margin-left: 3.4rem;
+      }
+      .email{
+        width: 70%;
+        border: 1px solid #201a58;
+        border-right: none;
+        outline: none;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        height: 40px;
+        margin: 0px;
+      }
+      .email-btn{
+        color: #fff;
+        background-color: #f36b22;
+        border:1px solid #201a58;
+        border-left:none;
+        outline: none;
+        height: 40px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: inline;
+        cursor: pointer;
+        margin: 0px;
+        width: 74px;
+    
+      }
+      .close-btn{
+        background-color: transparent;
+        border: none;
+        outline: none;
+    
+      }
+      .close-img{
+        width: 1rem;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        margin: 1rem;
+      }
+    .site-header {
+      position: relative;
+      }
+      .nav__wrapper{
+        position: relative;
+        left: 25.6px;
+      }
+      .site-header__end{
+        position: relative;
+        left: 176px; 
+      }
+    .site-header__wrapper {
+      display: flex;
+      align-items: center;
+      }
+      .nav__toggle {
+        display: none;
+      border :none;
+      outline-style:none ;
+      background-color:transparent;
+    }
+    ul{
+      list-style:none
+    }
+     .menu{
+      width:34px;
+      background-color: transparent;
+     }
+    @media (min-width: 660px) {
+      .nav__wrapper {
+        display: flex; } 
+        .site-header__wrapper {
+          padding-top: 0;
+          padding-bottom: 0; }}
+    
+    @media (max-width: 659px) {
+      .nav__wrapper {
+        position: absolute;
+        top: 100%; 
+        right: 0px; 
+        left: 150px;
+        z-index: 1;
+        background-color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-8%);
+        transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+        border-radius: 7px;
+        padding-left: 0px;
+      }
+        .nav__wrapper.active {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0); }
+        .nav-link{
+          color:#f88832;
+          font-size: 18px;
+          margin: 10px 0px 0px 10px;
+          
+        }
+        .nav-link:hover{
+          background-color: #74addd;
+          color: #fff;
+        }
+      .site-header__end{
+        position: static;
+        margin-bottom: 10px;
+      } 
+      .nav__toggle {
+        display: block;
+        position: absolute;
+       right: 3px;
+        top: 14px; } 
+        .brand-logo{
+          width: 144px;
+        }
+      #nav{
+        margin: 20px;
+      }}
+
+      
+/*-----------------------------------footer-----------------------------------*/
+
+.footer-basic {
+    margin-top: 24px;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .footer-basic li {
+    padding: 0 10px;
+  }
+  
+  .footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity: 1;
+  }
+  
+  .footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .footer-basic .social > a {
+    padding-top: 7;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity: 0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+  }
+  
+  
+/*-----------------------------------back btn-----------------------------------*/
+.back-btn{
+    margin:1rem 0rem 0.5rem 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  
+  .back{
+    width: 4rem;
+  }
